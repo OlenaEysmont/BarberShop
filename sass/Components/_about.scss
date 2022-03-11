@@ -1,0 +1,81 @@
+.section {
+  &_about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+}
+
+.wrap-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &_icon {
+    padding-left: 30px;
+  }
+
+  &_title {
+    font-family: $font-family-Open;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.3;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-left: 20px;
+    color: $secondtitle;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &_title {
+    font-family: $font-family-Ralwey;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: $secondtitle;
+    margin: 0px;
+  }
+  &_subtitle {
+    font-family: $font-family-Open;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: $second-desc-color;
+    padding-top: 20px;
+    margin: 0px;
+  }
+  &_desc {
+    font-family: $font-family-Open;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: $second-desc-color;
+    margin: 0;
+    padding-top: 20px;
+  }
+  &_btn {
+    width: 180px;
+    font-family: $font-family-Open;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background-color: $btn-background;
+    border: $btn-border 1px solid;
+    margin-top: 40px;
+  }
+}

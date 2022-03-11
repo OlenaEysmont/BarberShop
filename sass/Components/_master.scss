@@ -1,0 +1,75 @@
+.section {
+  &_master {
+    background-color: $backgroundmaster;
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+}
+
+.master-title {
+  font-family: $font-family-Open;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  margin: 0px;
+  padding-left: 30px;
+}
+
+.master-box {
+  &_block {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 44px;
+    text-align: center;
+  }
+
+  &_name {
+    font-family: $font-family-Open;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $mastertitle;
+    padding-top: 20px;
+    margin: 0px;
+  }
+  &_job {
+    font-family: $font-family-Open;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $masterdesk;
+    padding-top: 8px;
+    margin: 0px;
+  }
+  &_social {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    height: 44px;
+    margin: 0px;
+    padding-top: 30px;
+  }
+
+  &_social-link {
+    width: 44px;
+    height: 44px;
+  }
+  &_social-link:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 44px;
+  }
+  &_social-icon:hover {
+    fill: $masterdesk;
+    cursor: pointer;
+  }
+  &_social-icon:focus {
+    fill: $masterdesk;
+  }
+}

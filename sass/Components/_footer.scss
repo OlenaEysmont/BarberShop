@@ -1,0 +1,101 @@
+.footer {
+  background-color: $picebackground;
+  background-image: url(../../images/footer/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 496px;
+  &_title {
+    font-family: $font-family-Open;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 0.8;
+    text-align: center;
+    letter-spacing: 0.05em;
+    padding-top: 84px;
+    color: $titlecolor;
+    margin: 0px;
+  }
+  &_list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    list-style: none;
+    margin: 0px;
+  }
+  &_icon {
+    height: 24px;
+    width: 24px;
+    padding-top: 8px;
+  }
+  &_item {
+    display: flex;
+  }
+  &_map,
+  &_tel,
+  &_mail {
+    text-decoration: none;
+    font-family: $font-family-Open;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.02em;
+    color: $pricetext;
+    padding-left: 16px;
+  }
+}
+.form-box {
+  &_time {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+}
+.info {
+  font-family: $font-family-Open;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  color: $titlecolor;
+}
+.time {
+  font-family: $font-family-Open;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  padding-left: 30px;
+  padding-top: 20px;
+  color: $desc-color;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+  padding-top: 44px;
+  &_link {
+    font-family: $font-family-Open;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    padding-left: 40px;
+  }
+}
+.footer-date {
+  &_copy {
+    font-family: $font-family-Open;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    padding-left: 30px;
+    color: $desc-color;
+  }
+}
