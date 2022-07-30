@@ -15,11 +15,24 @@
     <header class="header">
         <section class="header_conteiner">
             <nav class="header_navigation">
-                <ul class="navigation">
-                    <li  class="navigation_list"><img  src="./images/mobile/Logo.png" alt="Logo"> </li>
-                    <li  class="navigation_list"><img  src="./images/mobile/menu.png" alt="menu"></li>
-                </ul>
+                <div class="navigation">
+                    <div class="navigation_list"><img  src="./images/mobile/Logo.png" alt="Logo"> </div>
+                    <div>
+                        <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+                            <img  src="./images/mobile/menu.png" alt="menu">
+                        </button>
+                        <div class="menu-conteiner js-menu-container"  id="mobile-menu">
+                            
+                                <button class="menu-toggle js-close-menu">X</button>
+                          
+                          
+            
+                        </div>
+                    </div>
+                </div>
+              
             </nav>
+          
             <div class="wrap">
                 <img class="wrap_icon" src="./images/mobile/line-header.png" alt="line" height="1">
                 <p class="wrap_subtitle">A hair salon for men in Kyiv </p> 
@@ -305,5 +318,11 @@
            </div>
        </section>
    </footer>
+
+
+   
+   <!-- <script src="./model.js"></script> -->
+   <script src="./js/mobile-menu.js"></script>
+  
 </body>
 </html>
