@@ -5,13 +5,11 @@
       background-image: url(../../images/mobile/background.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      width: 580px;
+    
     }
     @media screen and (max-width: 480px) {
       background-image: url(../../images/mobile/background.jpg);
-      background-attachment: fixed;
-      width: 480px;
-      height: 580px;
+      background-size: cover;
       margin: 0px;
     }
   }
@@ -74,8 +72,10 @@
     color: $desc-color;
     margin: 0px;
     padding-top: 20px;
-    @media screen and (max-width: 480px) {
-      width: 306px;
-    }
+    padding-bottom: 189px;
+    padding-right: 100px;
+    // @media screen and (max-width: 480px) {
+    //   width: 306px;
+    // }
   }
 }

@@ -8,5 +8,8 @@
   text-align: center;
   &_img {
     margin-bottom: 30px;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }

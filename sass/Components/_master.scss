@@ -23,6 +23,11 @@
     padding-top: 44px;
     text-align: center;
   }
+  &_icon{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
   &_name {
     font-family: $font-family-Open;

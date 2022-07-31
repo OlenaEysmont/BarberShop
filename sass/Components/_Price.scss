@@ -10,7 +10,6 @@
   }
   @media screen and (max-width: 480px) {
     background-attachment: fixed;
-    width: 480px;
     margin: 0px;
   }
   .wrap-price {
@@ -47,11 +46,10 @@
   &_items {
     background-image: url(../../images/Price/secondbackground.png);
     background-position: center;
+    background-size: cover;
     margin-left: 15px;
     margin-right: 15px;
     @media screen and (max-width: 480px) {
-      width: 418px;
-      height: 440px;
       padding-left: 30px;
     }
   }
