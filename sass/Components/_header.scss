@@ -1,8 +1,9 @@
 .header {
   list-style: none;
+  display: flex;
   &_conteiner {
-    @media screen and (max-width: 768px) {
-      background-image: url(../../images/mobile/background.jpg);
+    @media screen and (min-width: 481px) {
+      background-image: url(../../images/tablet/header-tablet.jpg);
       background-repeat: no-repeat;
       background-size: cover;
     
@@ -13,6 +14,90 @@
       margin: 0px;
     }
   }
+  &_bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 39px;
+    padding-right: 30px;
+    @media screen and (max-width: 480px){
+      display: none;
+    }
+  }
+  
+  
+  &_nav-tablet{
+    display:flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 480px){
+      display: none;
+    }
+  }
+  
+  &_btn{
+    color: $titlecolor;
+    font-family: $font-family-Open;
+    width: 160px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: $btn-border 1px solid;
+    margin-top: 40px;
+    color: $btn-background;
+    margin: 0px;
+  
+
+  }
+  &_phone{
+color: $titlecolor;
+font-family: $font-family-Open;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.2;
+text-align: center;
+padding-top: 20px;
+text-decoration: none;
+
+  }
+  &_contact{
+    display:flex;
+    flex-direction: column;
+
+  }
+  &_nav-list{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    padding: 0px;
+    padding-right: 40px;
+  }
+  &_list{
+  color: $titlecolor;
+  font-family: $font-family-Open;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: .02em;
+  margin: 0px;
+  padding-left: 20px;
+  }
+  &_list:hover{
+    color: $hover;
+  }
+  &_list:focus{
+    color: $hover;
+  }
+  &_navigation{
+    padding-top: 40px;
+  }
 }
 
 // Navigation
@@ -22,8 +107,30 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 480px){
   padding: 40px 30px;
   margin: 0px;
+  }
+  &_logo{
+    @media screen and (min-width: 480px){
+      display: none;
+    }
+  }
+  &_icon{
+    cursor: pointer;
+  }
+  
+  &_social-link{
+    display: flex;
+    flex-direction: column;
+    padding-top: 282px;
+  }
+  &_social:not(:last-child) {
+    padding-bottom: 40px;
+  }
+  &_rectangle{
+    padding-top: 40px;
+  }
 }
 
 .wrap {
@@ -77,5 +184,10 @@
     // @media screen and (max-width: 480px) {
     //   width: 306px;
     // }
+  }
+}
+.button-header{
+  @media screen and (min-width: 480px){
+    display: none;
   }
 }

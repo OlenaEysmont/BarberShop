@@ -1,10 +1,27 @@
 .section {
+  &_block {
+    display: flex;
+    padding-left: 39px;
+  }
+  &_about-img{
+    @media screen and( max-width:480px) {
+      display: none;
+      
+    }
+  }
   &_about {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 84px;
     padding-top: 84px;
+    @media screen and (min-width: 480px){
+      padding-top: 0px;
+    }
+  }
+  &_img:not(:last-child){
+    padding-bottom: 30px;
+
   }
 }
 
