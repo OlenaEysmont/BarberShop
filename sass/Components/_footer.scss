@@ -5,6 +5,14 @@
   background-size: cover;
   background-attachment: fixed;
   height: 496px;
+  &_box{
+    @media screen and(min-width:481px) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 40px; ;
+    }
+  }
   &_title {
     font-family: $font-family-Open;
     font-weight: 700;
@@ -22,6 +30,12 @@
     padding: 20px;
     list-style: none;
     margin: 0px;
+    @media screen and(min-width:481px) {
+    padding: 0px;
+    padding-left: 39px;
+    padding-right: 30px;
+  }
+
   }
   &_icon {
     height: 24px;
@@ -42,6 +56,7 @@
     letter-spacing: 0.02em;
     color: $pricetext;
     padding-left: 16px;
+    padding-bottom: 30px;
   }
 }
 .form-box {
@@ -50,6 +65,10 @@
     align-items: center;
     padding-left: 30px;
     padding-top: 40px;
+    @media screen and(min-width:481px) {
+      padding: 0px;
+      padding-left: 39px;
+    }
   }
 }
 .info {

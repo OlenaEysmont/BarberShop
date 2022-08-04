@@ -1,6 +1,11 @@
 .header {
   list-style: none;
   display: flex;
+  flex-direction: row;
+  @media screen and (min-width: 481px) {
+    margin-bottom: 84px;
+  }
+
   &_conteiner {
     @media screen and (min-width: 481px) {
       background-image: url(../../images/tablet/header-tablet.jpg);
@@ -19,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
-    padding-left: 39px;
+    padding-left: 30px;
     padding-right: 30px;
     @media screen and (max-width: 480px){
       display: none;
